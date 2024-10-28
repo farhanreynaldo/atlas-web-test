@@ -61,7 +61,7 @@ def load_data(file_path):
 
 st.title("Climate Data Visualization")
 
-filepath = DATA_PATH / "t_CMIP6_ssp370_mon_201501-210012.nc"
+filepath = DATA_PATH / "t_CMIP6_ssp370_mon_201501-210012_subset.nc"
 data = load_data(filepath)
 
 years = range(2015, 2101)
