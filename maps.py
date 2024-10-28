@@ -14,7 +14,7 @@ DATA_PATH = PROJECT_ROOT / "data"
 
 
 def plot_variable(data, date, projection="Robinson"):
-    MEMBER = 1
+    MEMBER = 0
     lon_, lat_ = data["lon"].values, data["lat"].values
     variable = data["t"].isel(member=MEMBER).sel(time=date)
 
